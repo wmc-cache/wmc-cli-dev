@@ -20,15 +20,15 @@ module.exports = async (appName) => {
         await download("direct:https://github.com/wmc-cache/vue-base.git", appName, { clone: true })
         spinner.succeed("下载完成")
         log(`
-下载完成，请执行下面命令启动项目：
-===========================
-cd ${appName}
-yarn 或者 npm init 
+             下载完成，请执行下面命令启动项目：
+             ===========================
+             cd ${appName}
+             yarn 或者 npm init 
 
-npm run dev
-或者
-yarn dev
-        `)
+             npm run dev
+             或者
+             yarn dev
+            `)
     } catch (error) {
         log(`下载失败`, error)
         spinner.stop();
