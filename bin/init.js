@@ -12,6 +12,7 @@ let chalk = require("chalk")
 const log = content => console.log(chalk.yellow(content))
 
 module.exports = async (appName) => {
+
     log(`🚀 创建项目 ${appName}`)
     shell.rm("-rf", appName);
     const spinner = ora("下载中...").start();

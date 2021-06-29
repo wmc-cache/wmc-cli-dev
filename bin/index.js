@@ -1,5 +1,6 @@
+#! /usr/bin/env node
 /**
- * 开发后台脚手架，快速生成标准Vue后台架构
+ * 
  * @author 吴梦成
  */
 let program = require("commander")
@@ -18,7 +19,7 @@ program.option("-n --name <type>", "output name");
 
 // 打印LOGO
 async function printLogo() {
-    let data = await asyncFiglet("v-cli");
+    let data = await asyncFiglet("wmc-cli");
     log(data);
 }
 program
@@ -35,7 +36,7 @@ program
                 choices: ["Javascript", "Typescript"]
             }
         ])
-        if (answer.language == "Javascript") {
+        if (answer.language == "Typescript") {
             // 下载框架
             log("您选择了Javascript版本，即将进入下载模式.")
             init(name);

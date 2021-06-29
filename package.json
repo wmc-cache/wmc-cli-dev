@@ -1,5 +1,5 @@
 {
-  "name": "wmc-cli",
+  "name": "wmc-cli-dev",
   "version": "1.0.0",
   "description": "one cli for create project",
   "main": "index.js",
