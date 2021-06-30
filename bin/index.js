@@ -33,12 +33,12 @@ program
                 name: "language",
                 type: "list",
                 message: "请选择语言版本",
-                choices: ["Javascript", "Typescript"]
+                choices: ["Typescript", "Javascript"]
             }
         ])
         if (answer.language == "Typescript") {
             // 下载框架
-            log("您选择了Javascript版本，即将进入下载模式.")
+            log("您选择了Typescript版本，即将进入下载模式.")
             init(name);
         } else {
             log("敬请期待！！！")
